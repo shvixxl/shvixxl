@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <title>ShviX</title>
+
+  <style>
+    @import url("https://cdn.jsdelivr.net/npm/@typopro/web-iosevka@3.7.5/TypoPRO-Iosevka.min.css");
+
+    html {
+      font-family: 'Iosevka', monospace;
+    }
+
+    #main {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+
+      max-width: 75%;
+
+      color: #333;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    #button {
+      background: none;
+      color: inherit;
+      border: none;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    #message {
+      font-size: 10em;
+      font-weight: 600;
+      padding: 50px;
+      animation: pulse 2s ease-in-out infinite;
+      transition: font-size .5s;
+    }
+
+    #message:hover {
+      cursor: pointer;
+      animation-play-state: paused;
+      font-size: 12em;
+    }
+
+    #message:active {
+      animation: tada .25s ease-in-out;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      to {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes tada {
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+
+      10%,
+      20% {
+        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      }
+
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      }
+
+      40%,
+      60%,
+      80% {
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      }
+
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main">
+    <h1 id="message">
+      <button id="button" onclick="location.href='https://github.com/shvixxl'" type="button">
+        ShviX
+      </button>
+    </h1>
+  </div>
+</body>
+
+</html>
