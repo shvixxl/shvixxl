@@ -45,17 +45,16 @@
 
     #message:hover {
       cursor: pointer;
-      animation-play-state: paused;
       font-size: 5em;
     }
 
     #message:active {
-      animation: tada .25s ease-in-out;
+      animation: pulse 2s ease-in-out infinite, tada .3s ease-in-out;
     }
 
     @keyframes pulse {
       from {
-        transform: scale(1);
+        transform: scale(0.9);
       }
 
       50% {
@@ -63,7 +62,7 @@
       }
 
       to {
-        transform: scale(1);
+        transform: scale(0.9);
       }
     }
 
