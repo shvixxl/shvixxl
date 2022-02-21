@@ -8,10 +8,10 @@
   <title>ShviX</title>
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700;800&display=swap');
+    @import url('https://cdn.jsdelivr.net/gh/aymanbagabas/iosevka-fonts@v6.1.2/dist/iosevka/iosevka.min.css');
 
     html {
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'Iosevka';
     }
 
     #main {
@@ -45,11 +45,11 @@
 
     #message:hover {
       cursor: pointer;
-      font-size: 5em;
+      font-size: 7em;
     }
 
     #message:active {
-      animation: pulse 2s ease-in-out infinite, tada .3s ease-in-out;
+      animation: shake 0.15s ease-in-out infinite;
     }
 
     @keyframes pulse {
@@ -66,31 +66,25 @@
       }
     }
 
-    @keyframes tada {
+    @keyframes shake {
       from {
-        transform: scale3d(1, 1, 1);
+        transform: scale(1);
       }
 
-      10%,
-      20% {
-        transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      25% {
+        transform: scale(0.8) rotate(3deg);
       }
 
-      30%,
-      50%,
-      70%,
-      90% {
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      50% {
+        transform: scale(1.2);
       }
 
-      40%,
-      60%,
-      80% {
-        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      75% {
+        transform: scale(0.8) rotate(-3deg);
       }
 
       to {
-        transform: scale3d(1, 1, 1);
+        transform: scale(1);
       }
     }
   </style>
