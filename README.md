@@ -1,3 +1,5 @@
 # 🌈 Software Engineer, AI Systems Developer
 
-Web/SaaS development, AI agents and integrations, RAG systems, REST and GraphQL APIs, MCP servers, tools and vector stores for LLMs, AWS and GCP services and deployments, database and software architecture design, ETL/ELT pipelines, scripts and automations, technical consultations. I rule them all! 🚀
+Web/SaaS development, AI agents and integrations, RAG systems, REST and GraphQL APIs, MCP servers, tools and vector stores for LLMs, AWS and GCP services and deployments, database and software architecture design, ETL/ELT pipelines, scripts and automations, technical consultations.
+
+Happy to work as a sole developer or as part of your team! ❤️
